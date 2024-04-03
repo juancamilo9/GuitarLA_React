@@ -1,4 +1,4 @@
-import { eEffect, useState, useMemo } from "react";
+import { useMemo } from "react";
 
 import Cart from "./Cart";
 
@@ -26,7 +26,7 @@ const Header = ({
             <a href="index.html">
               <img
                 className="img-fluid"
-                src="./public/img/logo.svg"
+                src="img/logo.svg"
                 alt="imagen logo"
               />
             </a>
