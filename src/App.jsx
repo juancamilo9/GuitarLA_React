@@ -1,16 +1,16 @@
 // Hooks
 import { useEffect, useState } from "react";
 // Componentes
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Footer from "./components/Footer";
 // Varios
 import db from "./data/db";
 // Estilos
 
 const App = () => {
   // Definición del hook
-  const [data, setData] = useState(db);
+  const [data] = useState(db);
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) ?? []);
 
   const MAX_ITEMS = 5
