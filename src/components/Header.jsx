@@ -26,7 +26,7 @@ const Header = ({
             <a href="index.html">
               <img
                 className="img-fluid"
-                src="/public/img/logo.svg"
+                src="./public/img/logo.svg"
                 alt="imagen logo"
               />
             </a>
