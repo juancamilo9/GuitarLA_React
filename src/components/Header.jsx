@@ -1,5 +1,6 @@
+import { carrito } from '../assets/img/carrito.png';
+import { logo_guitar } from '../assets/img/logo.svg';
 import Cart from "./Cart";
-import {logo_guitar} from '../../public/img/logo.svg'
 
 const Header = ({
   cart,
@@ -28,7 +29,7 @@ const Header = ({
             <div className="carrito">
               <img
                 className="img-fluid"
-                src="/public/img/carrito.png"
+                src={carrito}
                 alt="imagen carrito"
               />
 
