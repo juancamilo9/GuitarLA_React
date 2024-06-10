@@ -1,13 +1,9 @@
 import { useState } from "react";
 
 const Guitar = ({ guitar,addTocart}) => {
-  // hooks
-  
 
   // props
   const { id, name, image, description, price } = guitar;
-
-  // Funciones
   
   return (
     <div className="col-md-6 col-lg-4 my-4 row aliPgn-items-center">

@@ -1,23 +1,16 @@
-import { useMemo } from "react";
-
 import Cart from "./Cart";
+import {logo_guitar} from '../../public/img/logo.svg'
 
 const Header = ({
   cart,
   removeFromCart,
   increaseQuantityFromCart,
   removeQuantityFromCart,
-  emptyCart
+  emptyCart,
+  isEmpty,
+  cartTotal
 }) => {
-  // Hooks
-  const isEmpty = useMemo(() => cart.length > 0, [cart]);
-
-  // Calculo del total a pagar
-  const cartTotal = useMemo(
-    () => cart.reduce((total, item) => total + item.quantity * item.price, 0),
-    [cart]
-  );
-
+  
   return (
     <header className="py-5 header">
       <div className="container-xl">
@@ -26,7 +19,7 @@ const Header = ({
             <a href="index.html">
               <img
                 className="img-fluid"
-                src="/public/img/logo.svg"
+                src={logo_guitar}
                 alt="imagen logo"
               />
             </a>

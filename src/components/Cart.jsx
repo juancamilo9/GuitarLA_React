@@ -3,7 +3,6 @@ import React from "react";
 const Cart = ({ guitar, removeFromCart, increaseQuantityFromCart,removeQuantityFromCart }) => {
   
   const { name, id, price, image, quantity } = guitar;
-
   
   return (
     <tr>
