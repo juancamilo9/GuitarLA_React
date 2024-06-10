@@ -1,5 +1,5 @@
-import { carrito } from '../assets/img/carrito.png';
-import { logo_guitar } from '../assets/img/logo.svg';
+import carrito from '../assets/img/carrito.png';
+import logo_guitar from '../assets/img/logo.svg';
 import Cart from "./Cart";
 
 const Header = ({
